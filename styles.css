@@ -225,4 +225,88 @@ select {
     font-size: 12px;
   }
 
+  @media only screen and (max-width: 600px) {
+    header h1 {
+        font-size: 18px;
+    }
+  
+    header {
+        height: 70px;
+    }
+  
+    nav {
+        height: 35px;
+    }
+  
+    .nav-search li {
+        font-size: 12px;
+    }
+  
+    .nav-search input {
+        padding: 5px;
+    }
+  
+    .nav-search a {
+        margin-right: 5px;
+    }
+  
+    .nav-menu>li {
+        font-size: 12px;
+        padding: 3px;
+    }
+  
+    .dropdown-links a {
+        padding: 5px;
+        font-size: 10px;
+    }
+  
+    .login-container {
+        height: 200px;
+        width: 180px;
+        margin-top: 60px;
+    }
+  
+    #login-form {
+        width: 220px;
+    }
+  
+    .form-group {
+        margin-bottom: 15px;
+    }
+  
+    label {
+        font-size: 10px;
+    }
+  
+    input[type="text"],
+    input[type="password"],
+    select {
+        padding: 6px;
+        font-size: 10px;
+    }
+  
+    button[type="submit"] {
+        padding: 8px;
+    }
+  
+    select {
+        width: 50px;
+        height: 15px;
+        font-size: 8px;
+    }
+    
+    select option {
+        font-size: 8px;
+    }
+  
+    .register-link {
+        font-size: 10px;
+        padding-top: 5px;
+    }
+  
+    .disclaimer {
+        font-size: 10px;
+    }
+  }
+  
   
