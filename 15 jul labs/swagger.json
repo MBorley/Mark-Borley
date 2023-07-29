@@ -1,0 +1,129 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "My User Project CRUD",
+        "description": "My User Project Application API",
+        "license": {
+            "name": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+        }
+    },
+    "host": "localhost:3000",
+    "basePath": "/",
+    "tags": [
+        {
+            "name": "Games api",
+            "description": "API for Calculus in the system"
+        }
+    ],
+    "schemes": [
+        "http"
+    ],
+    "consumes": [
+        "application/json"
+    ],
+    "produces": [
+        "application/json"
+    ],
+    "paths": {
+        "/api/games": {
+            "get": {
+                "tags": [
+                    "Games"
+                ],
+                "summary": "Get list of games",
+                "parameters": [
+                    {
+                        "name": "publisher",
+                        "in": "query",
+                        "description": "publisher of the game"
+                    },
+                    {
+                        "name": "genre",
+                        "in": "query",
+                        "description": "game genre"
+                    },
+                    {
+                        "name": "title",
+                        "in": "query",
+                        "description": "filter by title using keyword"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "This should return a list of all games in the game-store."
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Games"
+                ],
+                "summary": "Add new game to games list",
+                "parameters": [
+                    {
+                        "name": "publisher"
+                    }
+                ]
+            }
+        },
+        "/api/games/{id}": {
+            "get": {
+                "tags": [
+                    "Games"
+                ],
+                "summary": "Get game details",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "A unique intentifier of the game"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "This service allows you to multiply two numbers together"
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Games"
+                ],
+                "summary": "Change games details",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Update details of specific game"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "This service allows you to multiply two numbers together"
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Games"
+                ],
+                "summary": "Delete game",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "delete a specific game"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "This service allows you to multiply two numbers together"
+                    }
+                }
+            }
+
+        }
+    }
+}
